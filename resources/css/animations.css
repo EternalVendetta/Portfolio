@@ -1,0 +1,71 @@
+/* NAV */
+
+nav a:hover {
+    color: hsl(0, 0%, 100%, .75);
+    border-bottom: 1px solid #9F5BB0;
+}
+
+nav a {
+    transition: 250ms linear;
+}
+
+nav:hover {
+    animation: aparition 500ms linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aparition {
+    0% {
+        background-color: hsl(0, 0%, 100%, 0);
+    }
+    100% {
+        background-color: hsl(0, 0%, 100%, .1);
+    }
+}
+
+/* HEADER */
+
+.introduce {
+    animation: fromRight both 500ms linear;
+}
+
+@keyframes fromRight {
+    0% {
+        opacity: 0;
+        transform: translate(500px, 125px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.introduce .button:hover {
+    animation: button both 250ms linear;
+}
+
+@keyframes button {
+    0% {
+        background: none;
+        width: 100px;
+    }
+    100% {
+        background: #9F5BB0;
+        width: 150px;
+    }
+}
+
+/* PRESENTATION */
+
+.box:hover {
+    animation: onMouseOver both 250ms linear;
+}
+
+@keyframes onMouseOver {
+    0% {
+        transform: translate(0px);
+    }
+    100% {
+        transform: translate(-10px, -5px);
+    }
+}
