@@ -3,7 +3,6 @@
     nav {
         display: flex;
         justify-content: start;
-
     }
 
     nav li {
@@ -16,6 +15,10 @@
         display: flex;
         min-width: 80%;
         margin: 100px auto;
+    }
+
+    .introduce h1 {
+        font-size: 2rem;
     }
     
     /* PRESENTATION */

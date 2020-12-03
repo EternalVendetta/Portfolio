@@ -32,7 +32,7 @@ nav:hover {
 @keyframes fromRight {
     0% {
         opacity: 0;
-        transform: translate(500px, 125px);
+        transform: translate(100px, 25px);
     }
     100% {
         opacity: 1;
@@ -41,10 +41,14 @@ nav:hover {
 }
 
 .introduce .button:hover {
-    animation: button both 250ms linear;
+    animation: buttonOver forwards 250ms linear;
 }
 
-@keyframes button {
+.introduce .button:active {
+    opacity: .9;
+}
+
+@keyframes buttonOver {
     0% {
         background: none;
         width: 100px;
@@ -67,5 +71,25 @@ nav:hover {
     }
     100% {
         transform: translate(-10px, -5px);
+    }
+}
+
+/* Javascript */
+
+.hidden {
+    display: none;
+}
+
+.display {
+    animation: appearing forwards 1s linear;
+}
+
+@keyframes appearing {
+    0% {
+        opacity: 0;
+        transform: translate(100px, -25px);
+    }
+    100% {
+        opacity: 1;
     }
 }

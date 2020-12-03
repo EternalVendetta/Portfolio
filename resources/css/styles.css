@@ -2,6 +2,7 @@
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -53,8 +54,8 @@ a {
 /* HEADER */
 
 header {
-    width: 100%;
-    height: 600px;
+    min-width: 100vw;
+    min-height: 100vh;
     background-image: url('/resources/assets/images/main-background.jpg');
     background-position: center;
     background-size: cover;
@@ -91,16 +92,17 @@ nav h2 {
 .introduce {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 50%;
-    height: 300px;
+    min-height: 70vh;
     margin: 100px auto;
     padding: 1rem;
     text-align: center;
 }
 
 .introduce h1 {
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -117,9 +119,8 @@ nav h2 {
 
 .presentation {
     width: 80%;
-    margin: 10rem auto;
+    margin: 12rem auto;
 }
-
 
 .presentation-container {
     display: flex;
